@@ -1,15 +1,20 @@
-import { GoHeart } from "react-icons/go";
-//import { FaLink } from "react-icons/fa";
+import { GoHeart } from 'react-icons/go';
+import CopyLink from './CopyLink';
 
 const GifItem = ({ title, url}) => {
 
     return (
         <div className="card">
-            {/* <FaLink className="fav-icon"/> */}
-            <button className="container-fav-icon" aria-label="btn-fav">
-                <GoHeart className="fav-icon"/>
-            </button>
+
+            <div className='container-btns-icons'>
+                <CopyLink link={url} />
+                <button className="fav-icon" aria-label="btn-fav">
+                    <GoHeart className="fav-icon"/>
+                </button>
+            </div>
+
             <img src={url} alt={"image gif" + title} />
+            
             <p className="title-card">{title}</p>
         </div>
     )

@@ -13,7 +13,7 @@ const getStickers = async(category) => {
         url: img.images?.downsized_medium.url,
     }));
 
-    console.log(stickers);
+    //console.log(stickers);
     return stickers;
 }
 

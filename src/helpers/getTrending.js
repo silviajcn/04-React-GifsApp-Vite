@@ -12,7 +12,7 @@ const getTrending = async () => {
         url: img.images?.downsized_medium.url,
     }));
 
-    console.log(trending);
+    //console.log(trending);
     return trending;
 }
 
