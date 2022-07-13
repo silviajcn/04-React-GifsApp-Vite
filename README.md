@@ -2,7 +2,7 @@
 
 * **Section**: 6 y 7
 
-## 🖱️ Visit here: 
+## 🖱️ Visit here: https://my-gif-app.netlify.app/
 
 ## 📁 Project:
 
