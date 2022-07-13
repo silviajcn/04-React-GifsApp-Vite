@@ -8,7 +8,7 @@ const GifItem = ({ title, url}) => {
 
             <div className='container-btns-icons'>
                 <CopyLink link={url} />
-                <button className="fav-icon" aria-label="btn-fav">
+                <button className="fav-icon" aria-label="button fav">
                     <GoHeart className="fav-icon"/>
                 </button>
             </div>

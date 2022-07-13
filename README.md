@@ -20,6 +20,13 @@
 * Uso de Github Pages / Netlify
 * Desplegar nuestra aplicación de React
 
+## 📌 Dependencies
+
+* ```react-router-dom```
+* ```react-icons```
+* ```react-copy-to-clipboard```
+* ```react-hot-toast```
+
 ## 💼 Prerequisites
 
 * Node.js

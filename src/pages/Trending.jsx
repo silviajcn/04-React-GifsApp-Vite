@@ -15,6 +15,10 @@ export const Trending = () => {
                 isLoading && (<Loader />)
             }
 
+            <div className="container-banner">
+                <img src="https://res.cloudinary.com/silviajcn/image/upload/v1657668810/CURSOS/React%20UDEY/banner_wkwgov.gif" alt="banner page" className="banner" />
+            </div>
+
             <h2 className="title-page">
                 <MdTrendingUp className="icon-title-page"/>
                 Trending Gifs

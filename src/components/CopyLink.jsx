@@ -17,6 +17,7 @@ const CopyLink = ({ link }) => {
                     //onClick={() => setCopied(true)}
                     onClick={notify} 
                     className="link-icon"
+                    aria-label="button copy link"
                 >
                     <FaLink className="link-icon" />
                 </button>
