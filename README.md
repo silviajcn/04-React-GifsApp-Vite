@@ -6,6 +6,8 @@
 
 ## 📁 Project:
 
+Project:
+
 * Custom Hooks
 * Fetch hacia un API
 * Comunicación entre componentes
@@ -15,6 +17,8 @@
 * Crear listados
 * keys
 * Giphy
+
+Build:
 
 * Generar build de producción de nuestra aplicación
 * Uso de Github Pages / Netlify
@@ -32,10 +36,23 @@ Testing:
 
 ## 📌 Dependencies
 
-* ```react-router-dom```
-* ```react-icons```
+* ```@babel/preset-env```
+* ```@babel/preset-react```
+* ```@testing-library/react```
+* ```@types/jest```
+* ```babel-jest```
+* ```jest```
+* ```jest-environment-jsdom```
+* ```prop-types```
+* ```react```
 * ```react-copy-to-clipboard```
+* ```react-dom```
 * ```react-hot-toast```
+* ```react-icons```
+* ```react-redux```
+* ```react-router-dom```
+* ```redux```
+* ```whatwg-fetch```
 
 ## 💼 Prerequisites
 
