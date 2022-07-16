@@ -2,7 +2,7 @@
 
 * **Section**: 6 y 7
 
-## 🖱️ Visit here: 
+## 🖱️ Visit here: https://my-gif-app.netlify.app/
 
 ## 📁 Project:
 
@@ -46,7 +46,7 @@
 
 ## 😍 GifsApp
 
-
+![img](https://user-images.githubusercontent.com/88461234/178623956-f4e07110-8fbd-4783-b66f-264117962ab4.png)
 
 ## 😎 Author
 
