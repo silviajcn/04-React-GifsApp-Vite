@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { VscSearch } from 'react-icons/vsc';
+import PropTypes from 'prop-types';
 
 export const AddCategorySticker = ({ onNewCategorySt }) => {
     
@@ -35,3 +36,11 @@ export const AddCategorySticker = ({ onNewCategorySt }) => {
         </form>
     )
 };
+
+AddCategorySticker.propTypes = {
+    onNewCategorySt: PropTypes.func.isRequired
+}
+
+AddCategorySticker.defaultProps = {
+    onNewCategorySt: 'There is not category'
+}

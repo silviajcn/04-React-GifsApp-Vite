@@ -1,6 +1,6 @@
 import NavBar from './NavBar';
 
-export const Header = ({ onNewCategory }) => {
+export const Header = () => {
 
     return (
         <header>

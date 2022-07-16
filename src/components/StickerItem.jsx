@@ -1,5 +1,6 @@
 import { GoHeart } from 'react-icons/go';
 import CopyLink from './CopyLink';
+import PropTypes from 'prop-types';
 
 export const StickerItem = ({ title, url }) => {
     return (
@@ -19,3 +20,13 @@ export const StickerItem = ({ title, url }) => {
         </div>
     )
 };
+
+StickerItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+
+StickerItem.defaultProps = {
+    title: 'There is not title',
+    url: 'There is not URL'
+}

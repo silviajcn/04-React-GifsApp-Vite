@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { VscSearch } from 'react-icons/vsc';
-
+import PropTypes from 'prop-types';
 
 export const AddCategory = ({onNewCategory}) => {
 
@@ -21,7 +21,7 @@ export const AddCategory = ({onNewCategory}) => {
 
     return (
 
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} aria-label="form">
             <label htmlFor="search" className='label-search' >Search GIFs</label>
             <input
                 id="search"
@@ -38,3 +38,11 @@ export const AddCategory = ({onNewCategory}) => {
 
     )
 };
+
+AddCategory.propTypes = {
+    onNewCategory: PropTypes.func.isRequired
+}
+
+AddCategory.defaultProps = {
+    onNewCategory: 'There is not category'
+}

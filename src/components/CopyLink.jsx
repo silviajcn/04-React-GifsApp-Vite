@@ -2,6 +2,7 @@ import { FaLink } from "react-icons/fa";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Toaster, toast } from 'react-hot-toast';
 //import { useState } from "react";
+import PropTypes from 'prop-types';
 
 const notify = () => toast('Link copied to clipboard!', {position: 'top-center'});
 
@@ -33,3 +34,11 @@ const CopyLink = ({ link }) => {
 };
 
 export default CopyLink;
+
+CopyLink.propTypes = {
+    link: PropTypes.string.isRequired
+}
+
+CopyLink.defaultProps = {
+    link: 'There is not link'
+}

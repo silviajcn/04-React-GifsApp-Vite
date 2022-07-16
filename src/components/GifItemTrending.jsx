@@ -1,5 +1,6 @@
 import { GoHeart } from 'react-icons/go';
 import CopyLink from './CopyLink';
+import PropTypes from 'prop-types';
 
 
 const GifItemTrending = ({ title, url}) => {
@@ -21,3 +22,13 @@ const GifItemTrending = ({ title, url}) => {
 };
 
 export default GifItemTrending;
+
+GifItemTrending.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+
+GifItemTrending.defaultProps = {
+    title: 'There is not title',
+    url: 'There is not URL'
+}

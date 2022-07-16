@@ -1,5 +1,6 @@
 import { GoHeart } from 'react-icons/go';
 import CopyLink from './CopyLink';
+import PropTypes from 'prop-types';
 
 const GifItem = ({ title, url}) => {
 
@@ -21,3 +22,13 @@ const GifItem = ({ title, url}) => {
 };
 
 export default GifItem;
+
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+
+GifItem.defaultProps = {
+    title: 'There is not title',
+    url: 'There is not URL'
+}
