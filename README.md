@@ -1,6 +1,6 @@
 # 🌎 GifsApp
 
-* **Section**: 6 y 7
+* **Section**: 6, 7 y 8
 
 ## 🖱️ Visit here: https://my-gif-app.netlify.app/
 
@@ -19,6 +19,16 @@
 * Generar build de producción de nuestra aplicación
 * Uso de Github Pages / Netlify
 * Desplegar nuestra aplicación de React
+
+Testing:
+
+* Pruebas en componentes específicos
+* Pruebas en componentes de forma individual
+* Pruebas con customHooks
+* Esperar cambios en un customHook
+* Simular eventos en inputs y formularios
+* Simular llamadas a funciones
+* Evaluar si existen elementos en el componente
 
 ## 📌 Dependencies
 
