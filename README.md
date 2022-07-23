@@ -84,6 +84,8 @@ Testing:
 
 ## 🌟 Course:
 
+The theory of this project is based on the course:
+
 * Curso: React: De cero a experto ( Hooks y MERN )
 * Profesor: Fernando Herrera
 * Plataforma: Udemy
