@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { AddCategorySticker, StickerGrid } from '../components';
+import { useFavs } from '../hooks/useFavs';
 
 export const Stickers = () => {
+
+    const { handleNewFav } = useFavs();
 
     const [categories, setCategories] = useState(['Stickers']);
     //console.log(categories);
@@ -26,6 +29,7 @@ export const Stickers = () => {
                         <StickerGrid
                             key={category}
                             category={category}
+                            onNewFav={handleNewFav}
                         />
                     ))
                 }

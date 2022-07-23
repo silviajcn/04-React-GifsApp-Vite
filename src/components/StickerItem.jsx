@@ -2,13 +2,29 @@ import { GoHeart } from 'react-icons/go';
 import CopyLink from './CopyLink';
 import PropTypes from 'prop-types';
 
-export const StickerItem = ({ title, url }) => {
+export const StickerItem = ({ id, title, url, onNewFav }) => {
+    
+    const onNewFavGif = () => {
+
+        const newFav = {
+            id: id,
+            title: title,
+            url: url
+        }
+
+        onNewFav(newFav);
+    }
+
     return (
         <div className="card card3">
 
             <div className='container-btns-icons'>
                 <CopyLink link={url} />
-                <button className="fav-icon" aria-label="btn-fav">
+                <button
+                    className="fav-icon"
+                    aria-label="btn-fav"
+                    onClick={() => onNewFavGif(id)}
+                >
                     <GoHeart className="fav-icon"/>
                 </button>
             </div>
@@ -23,7 +39,8 @@ export const StickerItem = ({ title, url }) => {
 
 StickerItem.propTypes = {
     title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired
+    url: PropTypes.string.isRequired,
+    onNewFav: PropTypes.func.isRequired
 }
 
 StickerItem.defaultProps = {

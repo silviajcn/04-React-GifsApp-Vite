@@ -1,10 +1,12 @@
-import { Loader } from "../components";
-import GifItemTrending from "../components/GifItemTrending";
-import useFetchTrending from "../hooks/useFetchTrending";
-import { MdTrendingUp } from "react-icons/md";
-
+import { Loader } from '../components';
+import GifItemTrending from '../components/GifItemTrending';
+import useFetchTrending from '../hooks/useFetchTrending';
+import { MdTrendingUp } from 'react-icons/md';
+import { useFavs } from '../hooks/useFavs';
 
 export const Trending = () => {
+
+    const { handleNewFav } = useFavs();
 
     const { images, isLoading } = useFetchTrending();
 
@@ -29,7 +31,8 @@ export const Trending = () => {
                     images.map((img) => (
                         <GifItemTrending
                             key={img.id}
-                            { ...img }
+                            {...img}
+                            onNewFav={handleNewFav}
                         />
                     ))
                 }

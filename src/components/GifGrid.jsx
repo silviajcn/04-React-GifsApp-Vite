@@ -3,8 +3,8 @@ import useFetchGifs from '../hooks/useFetchGifs';
 import { Loader } from './Loader';
 import PropTypes from 'prop-types';
 
-export const GifGrid = ({ category }) => {
-    
+export const GifGrid = ({ category, onNewFav }) => {
+     
     const { images, isLoading } = useFetchGifs(category);
 
     return (
@@ -21,7 +21,8 @@ export const GifGrid = ({ category }) => {
                     images.map((img) => (
                         <GifItem
                             key={img.id}
-                            { ...img }
+                            {...img}
+                            onNewFav={onNewFav}
                         />
                     ))
                 }
@@ -31,7 +32,8 @@ export const GifGrid = ({ category }) => {
 };
 
 GifGrid.propTypes = {
-    category: PropTypes.string.isRequired
+    category: PropTypes.string.isRequired,
+    onNewFav: PropTypes.func.isRequired
 }
 
 GifGrid.defaultProps = {

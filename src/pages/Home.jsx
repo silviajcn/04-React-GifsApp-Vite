@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { AddCategory, GifGrid } from '../components';
+import { useFavs } from '../hooks/useFavs';
 
 export const Home = () => {
+
+    const { handleNewFav } = useFavs();
 
     const [categories, setCategories] = useState(['Gifs']);
     //console.log(categories);
@@ -26,6 +29,7 @@ export const Home = () => {
                         <GifGrid
                             key={category}
                             category={category}
+                            onNewFav={handleNewFav}
                         />
                     ))
                 }

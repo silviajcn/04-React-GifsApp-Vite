@@ -3,7 +3,7 @@ import useFetchStickers from '../hooks/useFetchStickers';
 import { Loader } from './Loader';
 import PropTypes from 'prop-types';
 
-export const StickerGrid = ({ category }) => {
+export const StickerGrid = ({ category, onNewFav }) => {
 
     const { images, isLoading } = useFetchStickers(category);
 
@@ -22,6 +22,7 @@ export const StickerGrid = ({ category }) => {
                         <StickerItem
                             key={img.id}
                             { ...img }
+                            onNewFav={onNewFav}
                         />
                     ))
                 }
@@ -31,7 +32,8 @@ export const StickerGrid = ({ category }) => {
 };
 
 StickerGrid.propTypes = {
-    category: PropTypes.string.isRequired
+    category: PropTypes.string.isRequired,
+    onNewFav: PropTypes.func.isRequired
 }
 
 StickerGrid.defaultProps = {

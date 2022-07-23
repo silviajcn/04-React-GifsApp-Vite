@@ -266,6 +266,10 @@ h3 {
   background: rgb(153, 51, 255);
 }
 
+.card4 {
+  background: rgb(230, 70, 182);
+}
+
 /* .card:first-child:hover {
   color: rgb(255, 255, 255);
 } */
@@ -525,6 +529,10 @@ footer a {
 
   nav {
     flex-direction: column;
+  }
+
+  .container-banner {
+    margin-top: 20px;
   }
 
   form {

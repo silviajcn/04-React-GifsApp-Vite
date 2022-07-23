@@ -24,6 +24,7 @@ export const AddCategory = ({onNewCategory}) => {
         <form onSubmit={onSubmit} aria-label="form">
             <label htmlFor="search" className='label-search' >Search GIFs</label>
             <input
+                autoComplete='off'
                 id="search"
                 type="text"
                 placeholder="Search GIFs"

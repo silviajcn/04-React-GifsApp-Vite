@@ -23,6 +23,7 @@ export const AddCategorySticker = ({ onNewCategorySt }) => {
         <form onSubmit={onSubmit}>
             <label htmlFor="search" className='label-search' >Search Stickers</label>
             <input
+                autoComplete='off'
                 id="search"
                 type="text"
                 placeholder="Search Stickers"
