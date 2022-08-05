@@ -312,29 +312,59 @@ h3 {
 .link-icon {
   border: none;
   background: transparent;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  color: transparent;
-  /* animation-name: link;
-  animation-duration: 1s;
-  animation-iteration-count:initial; */
+  color: rgb(255, 255, 255);
 }
-
-/* @keyframes link {
-  0%{
-    transform: scale(1);
-  }
-  100%{
-    transform: scale(1.1);
-  }
-} */
 
 .fav-icon {
   border: none;
   background: transparent;
   font-size: 1.3rem;
   cursor: pointer;
-  color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.trash-icon {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.construction-text {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold
+}
+
+.construction-gif {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.card .link-icon:hover {
+  color: rgb(197, 192, 192);
+  animation-name: link;
+  animation-duration: 1s;
+  animation-iteration-count:initial;
+}
+
+@keyframes link {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+.card .fav-icon:hover {
+  color: rgb(197, 192, 192);
   animation-name: heard;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -358,34 +388,20 @@ h3 {
   }
 }
 
-.construction-text {
-  text-align: center;
-  margin-top: 70px;
-  font-weight: bold
-}
-
-.construction-gif {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.card .link-icon:hover {
-  color: rgb(255, 255, 255);
-}
-
-.card .fav-icon:hover {
-  color: rgb(255, 255, 255);
+.card .trash-icon:hover {
+  color: rgb(197, 192, 192);
 }
 
 .container-btns-icons .link-icon:active {
-  color: rgb(0, 204, 255);
+  color: rgb(57, 235, 80);
 }
 
 .container-btns-icons .fav-icon:active {
   color: rgb(250, 64, 64);
+}
+
+.container-btns-icons .trash-icon:active {
+  color: crimson;
 }
 
 .toaster {

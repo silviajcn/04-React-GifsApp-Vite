@@ -14,7 +14,7 @@ const FavItem = ({ fav, onDeleteFav }) => {
                     aria-label="button fav"
                     onClick={() => onDeleteFav(fav.id)}
                 >
-                    <FaTrashAlt className="link-icon"/>
+                    <FaTrashAlt className="trash-icon"/>
                 </button>
             </div>
 
